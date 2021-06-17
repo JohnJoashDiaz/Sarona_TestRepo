@@ -5,9 +5,10 @@ bot.on('message', (message) => {
 
     if(message.content == 'ping'){
         message.channel.send('pong');
-    }
-    else{
-        message.channel.send('not ping >:(');
+    } else if (message.content == 'pong'){
+        message.channel.send('ping');
+    } else {
+        message.channel.send('not ping or pong!')
     }
 
 });
