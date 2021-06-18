@@ -8,6 +8,7 @@ bot.on('message', (message) => {
     } else if (message.content == 'pong'){
         message.channel.send('ping');
     } else {
+        message.channel.send('not ping or pong!')
         message.channel.send('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
     }
 });
